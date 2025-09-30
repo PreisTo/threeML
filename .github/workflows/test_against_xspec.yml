@@ -71,7 +71,7 @@ jobs:
               
               pushd $XSPEC_BUILD_DIR;
               mkdir -p ~/xspec_home/xspec-install/;
-              ./configure --prefix=/home/runner/xspec_home/xspec-install/ --with-components="Xspec" && make && make install | grep -v hd_install;
+              ./configure --prefix=$HOME/xspec_home/xspec-install/ --with-components="Xspec" && make && make install | grep -v hd_install;
               ls ~/xspec_home/xspec-install/x86_64-pc-linux-gnu-libc*/;
               
               ls 
@@ -168,7 +168,7 @@ jobs:
 
               pushd $XSPEC_BUILD_DIR;
               mkdir -p ~/xspec_home/xspec-install/;
-              ./configure --prefix=/home/runner/xspec_home/xspec-install/ --with-components="Xspec" && make && make install | grep -v hd_install;
+              ./configure --prefix=$HOME/xspec_home/xspec-install/ --with-components="Xspec" && make && make install | grep -v hd_install;
               ls ~/xspec_home/xspec-install/x86_64-pc-linux-gnu-libc*/;
 
               ls
@@ -380,7 +380,7 @@ jobs:
 
               pushd $XSPEC_BUILD_DIR;
               mkdir -p ~/xspec_home/xspec-install/;
-              ./configure --prefix=/home/runner/xspec_home/xspec-install/ --with-components="Xspec" && make && make install | grep -v hd_install;
+              ./configure --prefix=$HOME/xspec_home/xspec-install/ --with-components="Xspec" && make && make install | grep -v hd_install;
               ls ~/xspec_home/xspec-install/x86_64-pc-linux-gnu-libc*/;
 
               ls
